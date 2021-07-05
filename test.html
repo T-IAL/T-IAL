@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>测试</title>
+</head>
+<body>
+<script src="dictionary-processor 0.1.js"></script>
+<script>
+  let dic = new Dictionary('dic');
+  dic.add_word('a','abc');
+  dic.add_word('b','bcd');
+  document.write(dic.get_content());
+  dic.download_files(this.get_content(),this.name);
+</script>
+</body>
+</html>
