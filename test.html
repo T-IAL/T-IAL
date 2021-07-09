@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>测试</title>
+</head>
+<body>
+  <h1>词典设置</h1>
+  <form>
+    word: <input type="text" name="word" id="addword"><br>
+    definition: <input type="text" name="definition" id="definition"><br>
+    <input type="button" value="添加/修改" onclick="dictionary_processor.add_word(dic,document.getElementById('addword').value,document.getElementById('definition').value);">
+  </form>
+  <form>
+    word: <input type="text" name="delword" id="delword"><br>
+    <input type="button" value="删除" onclick="dictionary_processor.delete_word(dic,document.getElementById('delword').value);">
+  </form>
+  <h2>词典内容</h2>
+  <p id='dictionary'></p>
+  <input type="button" value="下载" onclick="dictionary_processor.createAndDownloadFile(dic);">
+  <script src="dictionary-processor 0.1.3.js"></script>
+  <script>
+    var dic = new Dictionary('dic');
+    var dictionary_processor = new DictionaryProcessor('gafqgrewqtgfwqfwresrdthrgtrtge');
+    setInterval(function(){document.getElementById('dictionary').innerHTML=dictionary_processor.get_show(dic)},1000);
+  </script>
+</body>
+</html>
