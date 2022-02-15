@@ -3,10 +3,10 @@
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
 
-<link href='file://C://Users//Administrator//AppData//Roaming//Typora/themes/night/mermaid.dark.css' rel='stylesheet' type='text/css' /><link href='file://C://Users//Administrator//AppData//Roaming//Typora/themes/night/codeblock.dark.css' rel='stylesheet' type='text/css' /><link href='file://C://Users//Administrator//AppData//Roaming//Typora/themes/night/sourcemode.dark.css' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -134,19 +134,9 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
 kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
-.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; vertical-align: initial; }
 a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
-.md-inline-math .MathJax_SVG .noError { display: none !important; }
-.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
-.md-fences-math .MathJax_SVG_Display, .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: visible; display: block !important; }
-.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
-.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
-.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; zoom: 90%; }
-#math-inline-preview-content { zoom: 1.1; }
-.MathJax_SVG * { transition: none 0s ease 0s; }
-.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
@@ -165,9 +155,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .md-diagram-panel .messageText { stroke: none !important; }
 .md-diagram-panel .start-state { fill: var(--node-fill); }
 .md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
-.md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
 .md-fences.md-fences-math { font-size: 1em; }
-.md-fences-math .MathJax_SVG_Display { margin-top: 8px; cursor: default; }
 .md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
 .md-fences-advanced:not(.md-focus) { background: inherit; }
 .typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
@@ -210,6 +198,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
 .typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
 
 
 :root {
@@ -402,6 +391,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 
 html {
     font-size: 16px;
+    -webkit-font-smoothing: antialiased;
 }
 
 html,
@@ -447,6 +437,10 @@ div.code-tooltip,
     background: #333;
 }
 
+.native-window #md-notification {
+    border: 1px solid #70717d;
+}
+
 .popover.bottom > .arrow:after {
     border-bottom-color: #333;
 }
@@ -457,7 +451,7 @@ button,
 input,
 select,
 textarea {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
 }
 
 hr {
@@ -987,7 +981,7 @@ h6.md-focus .md-attr,
 
 .md-comment {
     color: #5a95e3;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .md-inline-math svg {
@@ -1313,7 +1307,10 @@ footer.ty-footer {
     height: 21px;
 }
 
-.ty-preferences .nav-group-item.active {
+.ty-preferences .nav-group-item.active,
+.export-item.active,
+.export-items-list-control,
+.export-detail {
     background: var(--item-hover-bg-color);
 }
 
@@ -1375,6 +1372,10 @@ footer.ty-footer {
     backdrop-filter: blur(1px);
 }
 
+.clear-btn-icon {
+    top: 8px;
+}
+
 
 </style><title>译语</title>
 </head>
@@ -1384,6 +1385,6 @@ footer.ty-footer {
 	font-family:fz;
 	src: url('tial.ttf');
 }
-</style><p>&nbsp;</p><p>&nbsp;</p><h1 id='译语------------------------词典编辑器'><span>译语                        </span><a href='https://t-ial.github.io/dictionary-processor/'><span>词典编辑器</span></a></h1><h2 id='简介'><span>简介</span></h2><p><span>译语是以在统一语法下兼容多套词汇，以程序实现相互转换的思想设计的辅助语，这样的设计避免了背单词所耗费的时间成本过大导致人们不愿使用辅助语的问题。同时，此语言也借鉴了编程语言的设计思路来避免歧义、简化语法。为了减少这样的设计造成的词句冗长、使用不便的问题，此语言高度支持自定义词汇。</span></p><h2 id='语法'><span>语法</span></h2><h3 id='词性'><span>词性</span></h3><h4 id='谓词'><span>谓词</span></h4><p><span>对个体词的描述，无返回值。</span></p><h4 id='函数'><span>函数</span></h4><p><span>对个体词的描述，返回一个个体词。</span></p><h4 id='个体词'><span>个体词</span></h4><p><span>表示实体或概念等思维对象。</span></p><h4 id='助记符'><span>助记符</span></h4><p><span>表示语法的标记。</span></p><h3 id='句式'><span>句式</span></h3><p><span>句子的整体可视为个体词，此词表示的是此句的含义。</span></p><p><span>谓词[个体词1,个体词2,……];</span></p><p><span>函数(个体词1,个体词2,……)</span></p><p><span>谓词和函数所描述的各个体词在句中的顺序可在自定义时随意安排，对于谓词，一般地，推荐以下顺序：</span></p><p><span>谓词[主题,内容,附加描述];</span></p><p><span>对于函数，一般地，推荐以下形式：</span></p><p><span>函数(主题,内容)</span></p><p><span>其中，主题是谓词主要的描述对象，内容是描述的主要部分，附加描述是对句子本身作出描述的句子，对主题和内容的描述亦可置于此处。</span></p><h2 id='词汇系统'><span>词汇系统</span></h2><p><span>并行存在多种自然语言词源的基本词库，而基本词义相同，用程序进行形式上的转换。基本词库内置于转换器中。</span></p><p><span>基本词库中部分词由通用符号表示，不参与转换。</span></p><p><span>基本词库中包括基本的谓词、简易的个体词、全体助记符，其中助记符没有词源，无需转换。基本词库中的词有各种语言的解释，解释中会写明论域，如无说明，则默认为全体字符组合。</span></p><p><span>提供扩展词库，包括一些常用词，可自行安装。</span></p><p><span>自定义词库是用由基本词构成的语句定义自选符号的文档，使用时需自行导入转换器。</span></p><h2 id='字符与发音'><span>字符与发音</span></h2><p><span>从词汇系统的构成来看，此语言并无制定专用文字的必要，但为满足极少数无程序状况下的使用，这里给出一套标准表音字符。</span></p><h1 id='0-1-2-3-4-5-6-7-8-9-a-b-c-d-e-f'><span style="font-family:'fz'"><span>0 1 2 3 4 5 6 7 8 9 A B C D E F</span></span></h1><p><span>这套字符与十六进制数字一一对应，在实际表示词汇时也表现为编号，这实际上正是这个语言中的数字。</span></p><p><span>每个符号对应一个辅音，为了方便使用，可任意加入元音组成音节，但只需依靠辅音表义。</span></p><p><span>所有发音不分清浊、变化，只要调音部位和方式大致符合即可。</span></p><figure><table><thead><tr><th style='text-align:center;' ><span>字符</span></th><th style='text-align:center;' ><span>发音</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>0</span></span></td><td style='text-align:center;' ><span>双唇爆发音/b/,/p/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>1</span></span></td><td style='text-align:center;' ><span>龈爆发音/d/,/t/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>2</span></span></td><td style='text-align:center;' ><span>软腭爆发音/k/,/g/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>3</span></span></td><td style='text-align:center;' ><span>双唇至龈后鼻音/m/,/ɱ/,/n/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>4</span></span></td><td style='text-align:center;' ><span>硬腭至小舌鼻音/ɲ/,/ŋ/,/ɴ/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>5</span></span></td><td style='text-align:center;' ><span>唇齿擦音/f/,/v/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>6</span></span></td><td style='text-align:center;' ><span>龈擦音/s/,/z/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>7</span></span></td><td style='text-align:center;' ><span>龈后擦音/ʃ/,/ʒ/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>8</span></span></td><td style='text-align:center;' ><span>软腭擦音/x/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>9</span></span></td><td style='text-align:center;' ><span>齿龈近音，齿龈边近音/ɹ/,/l/或任意颤音</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>A</span></span></td><td style='text-align:center;' ><span>硬腭近音/j/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>B</span></span></td><td style='text-align:center;' ><span>唇-软腭近音/w/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>C</span></span></td><td style='text-align:center;' ><span>任意喷音/’/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>D</span></span></td><td style='text-align:center;' ><span>龈后喌音/!/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>E</span></span></td><td style='text-align:center;' ><span>齿塞音/t͡s/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>F</span></span></td><td style='text-align:center;' ><span>顶塞音/t͡ʃ/,/d͡ʒ/</span></td></tr></tbody></table></figure></div></div>
+</style><p>&nbsp;</p><p>&nbsp;</p><h1 id='译语------------------------词典编辑器'><span>译语                        </span><a href='https://t-ial.github.io/dictionary-processor/'><span>词典编辑器</span></a></h1><h2 id='简介'><span>简介</span></h2><p><span>译语是以在统一语法下兼容多套词汇，以程序实现相互转换的思想设计的辅助语，这样的设计避免了背单词所耗费的时间成本过大导致人们不愿使用辅助语的问题。同时，此语言也借鉴了编程语言的设计思路来避免歧义、简化语法。为了减少这样的设计造成的词句冗长、使用不便的问题，此语言高度支持自定义词汇。</span></p><h2 id='语法'><span>语法</span></h2><h3 id='词性'><span>词性</span></h3><h4 id='谓词'><span>谓词</span></h4><p><span>描述关系、性质。</span></p><h4 id='结构词'><span>结构词</span></h4><p><span>表示结构。</span></p><h4 id='体词'><span>体词</span></h4><p><span>表示性质。</span></p><h4 id='助记符'><span>助记符</span></h4><p><span>表示语法的标记。</span></p><h3 id='句法'><span>句法</span></h3><h4 id='事件'><span>事件</span></h4><p><span>谓词[词1,词2,词3,……]</span></p><p><span>这样的句子称为事件，描述结构的关系、性质、状态及其变化。</span></p><h4 id='结构'><span>结构</span></h4><p><span>结构词(词1,词2,词3,……)</span></p><p><span>这样的句子称为结构，表示一种思维、描述的对象。</span></p><p><span>事件句是一种结构，结构句代表一种结构。</span></p><p><span>括号中的词序区分了词在句中的意义。</span></p><h2 id='词汇系统'><span>词汇系统</span></h2><p><span>并行存在多种自然语言词源的基本词库，而基本词义相同，用程序进行形式上的转换。基本词库内置于转换器中。</span></p><p><span>基本词库只包括多种词源的词，用于转换。无需转换的词不进入基本词库，只进入基本词典。</span></p><p><span>基本词典中的词有各种语言的解释。</span></p><p><span>提供扩展词库，包括一些常用词，可自行安装。</span></p><p><span>自定义词库是用由基本词构成的语句定义自选符号的文档，使用时需自行导入转换器。</span></p><h2 id='字符与发音'><span>字符与发音</span></h2><p><span>从词汇系统的构成来看，此语言并无制定专用文字的必要，但为满足极少数无程序状况下的使用，这里给出一套标准表音字符。</span></p><h1 id='0-1-2-3-4-5-6-7-8-9-a-b-c-d-e-f'><span style="font-family:'fz'"><span>0 1 2 3 4 5 6 7 8 9 A B C D E F</span></span></h1><p><span>这套字符与十六进制数字一一对应，在实际表示词汇时也表现为编号，这实际上正是这个语言中的数字。</span></p><p><span>每个符号对应一个辅音，为了方便使用，可任意加入元音组成音节，但只需依靠辅音表义。</span></p><p><span>所有发音不分清浊、变化，只要调音部位和方式大致符合即可。</span></p><figure><table><thead><tr><th style='text-align:center;' ><span>字符</span></th><th style='text-align:center;' ><span>发音</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>0</span></span></td><td style='text-align:center;' ><span>双唇爆发音/b/,/p/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>1</span></span></td><td style='text-align:center;' ><span>龈爆发音/d/,/t/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>2</span></span></td><td style='text-align:center;' ><span>软腭爆发音/k/,/g/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>3</span></span></td><td style='text-align:center;' ><span>双唇至龈后鼻音/m/,/ɱ/,/n/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>4</span></span></td><td style='text-align:center;' ><span>硬腭至小舌鼻音/ɲ/,/ŋ/,/ɴ/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>5</span></span></td><td style='text-align:center;' ><span>唇齿擦音/f/,/v/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>6</span></span></td><td style='text-align:center;' ><span>龈擦音/s/,/z/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>7</span></span></td><td style='text-align:center;' ><span>龈后擦音/ʃ/,/ʒ/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>8</span></span></td><td style='text-align:center;' ><span>软腭擦音/x/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>9</span></span></td><td style='text-align:center;' ><span>齿龈近音，齿龈边近音/ɹ/,/l/或任意颤音</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>A</span></span></td><td style='text-align:center;' ><span>硬腭近音/j/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>B</span></span></td><td style='text-align:center;' ><span>唇-软腭近音/w/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>C</span></span></td><td style='text-align:center;' ><span>鼻喷气音/’/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>D</span></span></td><td style='text-align:center;' ><span>龈后喌音/!/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>E</span></span></td><td style='text-align:center;' ><span>齿塞音/t͡s/</span></td></tr><tr><td style='text-align:center;' ><span style="font-family:'fz'"><span>F</span></span></td><td style='text-align:center;' ><span>顶塞音/t͡ʃ/,/d͡ʒ/</span></td></tr></tbody></table></figure></div></div>
 </body>
 </html>
